@@ -16,9 +16,9 @@ namespace MvcBartender.ViewModels
         {
             var retVal = new DrinkOrderViewModel();
 
-            retVal.AvailableDrinks = retVal._dbContext.Drinks.OrderBy(x => x.Id).Select(x => new DrinkOrderItemViewModel
+            retVal.Drinks = retVal._dbContext.Drinks.OrderBy(x => x.Id).Select(x => new DrinkOrderItemViewModel
             {
-                Id = x.Id,
+                DrinkId = x.Id,
                 Name = x.Name,
                 Price = x.Price,
                 Quantity = 0
@@ -27,6 +27,6 @@ namespace MvcBartender.ViewModels
             return retVal;
         }
 
-        public IList<DrinkOrderItemViewModel> AvailableDrinks { get; set; }
+        public IList<DrinkOrderItemViewModel> Drinks { get; set; }
     }
 }
