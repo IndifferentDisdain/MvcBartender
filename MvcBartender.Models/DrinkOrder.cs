@@ -9,7 +9,8 @@ namespace MvcBartender.Models
         public int Id { get; set; }
 
         [Required]
-        public DateTime OrderedOn { get; set; }
+        [DataType(DataType.DateTime)]
+        public DateTime OrderedOnUTC { get; set; }
 
         [Required]
         public decimal TotalPrice { get; set; }

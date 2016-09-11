@@ -1,0 +1,37 @@
+﻿@model MvcBartender.ViewModels.DrinkOrderViewModel
+
+@{
+
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <h1>Order Drinks</h1>
+    <p>
+        Welcome to our online drink ordering system. Please enter the drinks you'd like below, and we'll fill your order
+        as soon as we can!
+    </p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Drink Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        @for(var i = 0; i < Model.AvailableDrinks.Count; i++)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => x.AvailableDrinks[i].Name)</td>
+                <td>@Html.DisplayFor(x => x.AvailableDrinks[i].Price)</td>
+                <td>@Html.TextBoxFor(x => x.AvailableDrinks[i].Quantity, new {@class = "form-control"})</td>
+                @Html.HiddenFor(x => x.AvailableDrinks[i].Id)
+            </tr>
+        }
+        </tbody>
+    </table>
+    <input type="submit" class="btn btn-primary" value="Place Order"/>
+}
