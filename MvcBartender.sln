@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcBartender", "MvcBartender\MvcBartender.csproj", "{1C48F406-82E6-4B56-9501-BCA753EE17E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcBartender.Models", "MvcBartender.Models\MvcBartender.Models.csproj", "{A13DE3CA-EE5D-49D7-BC13-714081C9956B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MvcBartender.SqlServer", "MvcBartender.SqlServer\MvcBartender.SqlServer.sqlproj", "{7D6F5675-A663-40F9-8A1D-AD7C3E043B2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{1C48F406-82E6-4B56-9501-BCA753EE17E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C48F406-82E6-4B56-9501-BCA753EE17E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C48F406-82E6-4B56-9501-BCA753EE17E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13DE3CA-EE5D-49D7-BC13-714081C9956B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13DE3CA-EE5D-49D7-BC13-714081C9956B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13DE3CA-EE5D-49D7-BC13-714081C9956B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13DE3CA-EE5D-49D7-BC13-714081C9956B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6F5675-A663-40F9-8A1D-AD7C3E043B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6F5675-A663-40F9-8A1D-AD7C3E043B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6F5675-A663-40F9-8A1D-AD7C3E043B2F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7D6F5675-A663-40F9-8A1D-AD7C3E043B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6F5675-A663-40F9-8A1D-AD7C3E043B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6F5675-A663-40F9-8A1D-AD7C3E043B2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
