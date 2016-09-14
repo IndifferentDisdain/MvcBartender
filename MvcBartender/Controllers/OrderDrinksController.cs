@@ -16,8 +16,11 @@ namespace MvcBartender.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Index(IList<DrinkOrderItemPostModel> drinks)
         {
+            if (!ModelState.IsValid) return View();
+
             var orderId = DrinkOrderPostModel.CreateDrinkOrder(drinks.Where(x => x.Quantity > 0).ToList());
             return RedirectToAction("Confirmation", new {id = orderId});
         }
